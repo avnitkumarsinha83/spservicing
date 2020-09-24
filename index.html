@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://www.spservicing.com/ -->
+<html id="layout_html" lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <title>SPS Corporate Website</title>
+   
+    <script type="text/javascript" src="./SPS_Corporate_Website_files/ruxitagentjs_ICA2SVfjqru_10199200831173248.js.download" data-dtconfig="rid=RID_2418|rpid=1315722084|domain=spservicing.com|reportUrl=/rb_da927e9c-cf49-47c9-ab18-19ebe920b458|app=8a60c1ddef9df7cd|ssc=1|featureHash=ICA2SVfjqru|vcv=2|rdnt=1|uxrgce=1|bp=2|cuc=fpgky74k|dpvc=1|lastModification=1600695591956|dtVersion=10199200831173248|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/ruxitagentjs_ICA2SVfjqru_10199200831173248.js"></script><link rel="icon" href="./SPS_Corporate_Website_files/favicon1.ico" type="image/x-icon">  
+     <link href="./SPS_Corporate_Website_files/jquery-ui.css" rel="stylesheet" type="text/css">  
+    <script src="./SPS_Corporate_Website_files/jquery-3.5.1.min.js.download" type="text/javascript"></script>
+    <script src="./SPS_Corporate_Website_files/modernizr-2.0.6-development-only.js.download" type="text/javascript"></script>
+    <script src="./SPS_Corporate_Website_files/jquery-ui.min1.12.1.js.download" type="text/javascript"></script>
+
+
+    <link href="./SPS_Corporate_Website_files/Site.css" rel="stylesheet" type="text/css">
+    <link href="./SPS_Corporate_Website_files/Layout.css" rel="stylesheet" type="text/css">
+    <link href="./SPS_Corporate_Website_files/bootstrap.css" rel="stylesheet" type="text/css">
+    
+    <script src="./SPS_Corporate_Website_files/jquery.marquee.min.js.download" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#spanCaret").mouseenter(function () {
+                $("#liFirmMenu .dropdown-menu").delay(10).fadeIn();
+
+            }).mouseleave(function () {
+                $("#liFirmMenu .dropdown-menu").delay(10).fadeOut();
+            });
+
+        });
+    </script>
+    <script>
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+
+
+    
+     
+    
+
+ 
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".fbtncontainer").click(function () {
+                var FId = $(this).attr("id");
+                $(this).removeClass("unselect").addClass("select");
+                $('#ulFont > ul > li > .fbtncontainer').each(function () {
+                    var FMenuIds = $(this).attr("id");
+                    if (FId != FMenuIds) {
+                        $("#" + FMenuIds).removeClass("select").addClass("unselect");
+                    }
+                });
+            });
+
+            if (!(Modernizr.multiplebgs && Modernizr.cssgradients || Modernizr.multiplebgs)) {
+                $("#mainBody").attr("id", "mainBody2")
+            }
+            $('#divMain').fadeIn(1);
+        });
+
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var isMobileTab = window.matchMedia("only screen and (max-width: 1024px)");
+            if (isMobileTab.matches) {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("moveTop").style.display = "block";
+                } else {
+                    document.getElementById("moveTop").style.display = "none";
+                }
+            }
+            else {
+                document.getElementById("moveTop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+        }
+
+        $(window).on('resize', function () {
+            scrollFunction();
+        });
+
+    </script>
+    <noscript class="offscreen">
+        Your web browser doesn't support JavaScript or JavaScript is disabled. Please enable
+        JavaScript in your browser settings so page can function correctly.
+    </noscript>
+</head>
+<body id="mainBody">
+    <div id="divMain" class="content-background" style="">
+      <div class="container">
+       <div id="mainBody">
+    <header>
+
+
+<script type="text/javascript" src="./SPS_Corporate_Website_files/launcher.js.download"></script>
+<script type="text/javascript">
+    function removesession() {
+        for (var i = 0; i < sessionStorage.length; i++) {
+            var key = sessionStorage.key(i);
+            sessionStorage.removeItem(key);
+        }
+        sessionStorage.removeItem("parentdiv");
+    }
+
+    function removeImageSeparatorInTabMobile() {
+        var isTabMobile = window.matchMedia("only screen and (max-width: 1023px)");
+        if (isTabMobile.matches) {
+            $("img.separator").hide();
+        }
+        else {
+            $("img.separator").show();
+        }
+    }
+
+    function dropdownHover() {
+        $("#liFirmMenu").hover(function () {
+            $("#ulFirm.navbar-default-sub.dropdown-menu").show();
+        }, function () {
+            $("#ulFirm.navbar-default-sub.dropdown-menu").hide();
+        });
+    }
+
+    function stickyNavbarOnMobileView() {
+        var isTabMobile = window.matchMedia("only screen and (max-width: 1023px)");
+        var top = $('#navbar').offset().top;
+        $(window).scroll(function (event) {
+            var y = $(this).scrollTop();
+            if (y >= top && isTabMobile.matches)
+                $('#navbar').addClass('sticky');
+            else
+                $('#navbar').removeClass('sticky');
+            //$('#navbar').width($('#navbar').parent().width());
+        });
+    }
+
+    function overlayNavbarInTabMobile() {
+        var isTabMobile = window.matchMedia("only screen and (max-width: 1023px)");
+        if (isTabMobile.matches) {
+            $("#navbar .container-fluid").addClass("overlayP");
+            $("#myNavbar").addClass("overlayC");
+        }
+        else {
+            $('#navbar .container-fluid').removeClass('overlayP');
+            $('#myNavbar').removeClass('overlayC');
+        }
+    }
+
+    function fontForIPhone5(e) {
+        var isMobile = window.matchMedia("only screen and (max-width: 360px)");
+
+        if (isMobile.matches && e == "large") {
+            $('#mainBody').css({ 'font-size': '13px' });
+        }
+        else if (isMobile.matches && e == "medium") {
+            $('#mainBody').css({ 'font-size': '12px' });
+        }
+        else if (isMobile.matches && e == "small") {
+            $('#mainBody').css({ 'font-size': '11px' });
+        }
+    }
+    function widthForLoginForm(e) {
+        var isNonMobile = window.matchMedia("only screen and (min-width: 1024px)");
+        if (isNonMobile.matches && e == "large") {
+            $('#overlayM').css({ 'width': '341px' });
+        }
+        else if (isNonMobile.matches && e == "medium") {
+            $('#overlayM').css({ 'width': '312px' });
+        }
+        else if (isNonMobile.matches && e == "small") {
+            $('#overlayM').css({ 'width': '285px' });
+        }
+    }
+    function FontSizeInLandscapeFromTabToLaptop(e) {
+        var isLaptopView = window.matchMedia("only screen and (min-width: 1024px)");
+        if (isLaptopView.matches && e == "large") {
+            $("#layout_html,body").css("font-size", "17px");
+        }
+        else if (isLaptopView.matches && e == "medium") {
+            $("#layout_html,body").css("font-size", "15px");
+        }
+        else if (isLaptopView.matches && e == "small") {
+            $("#layout_html,body").css("font-size", "13px");
+        }
+        //        else { $("#layout_html,body").css("font-size", "13px"); }
+    }
+    function prependOrAppendWelcomeAboveButton() {
+        var isMobileViewForWelcome = window.matchMedia("only screen and (max-width: 767px)"); // and (orientation: portrait)
+        //      var isMobileViewOnLandForWelcome = window.matchMedia("only screen and (max-width: 767px) and (orientation: landscape)");
+        if (isMobileViewForWelcome.matches) {
+            //$('#myNavbar').append($('div.leftnav'));
+            $('#userContainer').prepend($('#welcome'));
+        }
+        //        else if (isMobileViewOnLandForWelcome.matches) {
+        //            $('#userContainer').append($('#welcome'));
+        //        }
+        else { $('#userContainer').append($('#welcome')); }
+    }
+    function removeDiffFontsForMobiles() {
+        var isOtherMobile = window.matchMedia("only screen and (max-width: 1023px)"); //window.matchMedia("only screen and (max-width: 768px)");
+        var isIPhone5 = window.matchMedia("only screen and (max-width: 360px)");
+        if (isIPhone5.matches) {
+            $('#small_font').hide();
+            $('#medium_font').hide();
+            $('#large_font').hide();
+            $('body').css('font-size', '11px');
+        }
+        else if (isOtherMobile.matches) {
+            $('#small_font').hide();
+            $('#medium_font').hide();
+            $('#large_font').hide();
+            $('body').css('font-size', '13px');
+        }
+        else {
+            $('#small_font').show();
+            $('#medium_font').show();
+            $('#large_font').show();
+        }
+    }
+
+    function appendSearchBox() {
+        var isMobile = window.matchMedia("only screen and (max-width: 1023px)"); //window.matchMedia("only screen and (max-width: 768px)");
+        if (isMobile.matches) {
+            $('#navbarLogo').append($('#searchBox'));
+        }
+        else {
+            $('#myNavbar').append($('#searchBox'));
+        }
+    }
+
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("navbar-collapse overlayC zeroleft in");
+        //var _focusUl = $(".nav").hasClass("nav navbar-nav"); ;
+        //var _openedUlS = $(".navbar-collapse").hasClass("nav navbar-nav");
+        if (_opened === true && !clickover.hasClass("navbar-toggle") && !clickover.is("#searchtextbox") && !clickover.is("#SearchButton") && !clickover.is("a.dropdown-toggle.topmenu.dwnarrow.select") && !clickover.parent().is("div.leftnav")) {
+            $("button.navbar-toggle").click();
+        }
+        var _openedProfileUpdate = $("#profile_menu").hasClass("show");
+        if (_openedProfileUpdate === true && !clickover.is("#profile_update") && !clickover.is("#profile_menu") && !clickover.hasClass("pr_line") && !clickover.is('ul') && !clickover.is('li')) {
+            $("div#profile_update").click();
+        }
+       
+    });
+
+    $(document).ready(function () {
+        stickyNavbarOnMobileView();
+        overlayNavbarInTabMobile();
+
+        var isTabMobile = window.matchMedia("only screen and (max-width: 1023px)");
+        var isIPhone5 = window.matchMedia("only screen and (max-width: 360px)");
+        if (isIPhone5.matches) {
+            $('#mainBody').css({ 'font-size': '11px' });
+        }
+        removeImageSeparatorInTabMobile()
+        if (!isTabMobile.matches) {
+            dropdownHover()
+        }
+//        $("#profile_update").hover(function () {
+//            $(this).next().show();
+//            //var isMaxWidth = window.matchMedia("only screen and (max-width: 412px)");
+//            //var isIPhone5 = window.matchMedia("only screen and (max-width: 360px)");
+//            //if (isMaxWidth.matches) {
+//            //    var width = $(".pr_line").width() - 31; //41; //var width = $(".pr_line").width() - 19;
+//            //    $(this).css("width", width);
+//            //}
+//            //else { }
+//        }, function () {
+//            $(this).next().hide();
+//            if ($("#profile_menu").is(":visible")) { }
+//            else {
+//                $(this).css("width", "auto");
+//            }
+//        });
+//        $("#profile_menu").hover(function () {
+//            $(this).show();
+//            //var width = $(".pr_line").width() - 19;
+//            //$("#profile_update").css("width", width);
+//        }, function () {
+//            $(this).hide();
+//            $("#profile_update").css("width", "auto");
+        //        });
+        $("#profile_update").click(function (event) {
+            var childClass = $("#profile_menu").hasClass("hidden");
+            if (childClass) {
+                $("#profile_menu").removeClass("hidden");
+                $("#profile_menu").addClass("show");
+            }
+            else {
+                $("#profile_menu").removeClass("show");
+                $("#profile_menu").addClass("hidden");
+            }
+        });
+        $("#large_font").click(function () {
+            localStorage.font = "large";
+            $("#layout_html,body").css("font-size", "17px");
+            $('.fbtncontainer').removeClass('select');
+            $("#large_font").addClass("select");
+            //            $(".accessyouraccount").css("padding-left", "14px");
+            //            $("#overlay").css("margin", "20px 0px 0px 655px");
+            //            $(".login_overlay").css("width", "283px");
+            //            $(".login_text_box").css("width", "180px");
+            //            $('#Banner2Text,#Banner3Text').css('margin-top', '-40px');
+            //            $('#Banner1Text').css('margin-top', '-70px');
+            $('.separator').css('margin', '5px 0 0 0');
+            $(".navbar-nav > li > a").removeClass("a-padding-mediumFont");
+            $(".topmenu.dwnarrow").addClass("dwnarrow-medium-large-Font");
+            fontForIPhone5(localStorage.font);
+            widthForLoginForm(localStorage.font);
+        });
+        $("#medium_font").click(function () {
+            localStorage.font = "medium";
+            $("#layout_html,body").css("font-size", "15px");
+            $('.fbtncontainer').removeClass('select');
+            $("#medium_font").addClass("select");
+            //            $(".accessyouraccount").css("padding-left", "19px");
+            //            $("#overlay").css("margin", "20px 0px 0px 672px");
+            //            $(".login_overlay").css("width", "266px");
+            //            $(".login_text_box").css("width", "175px");
+            //            $('#Banner1Text').css('margin-top', '-63px');
+            //            $('#Banner2Text,#Banner3Text').css('margin-top', '0px');
+            $('.separator').css('margin', '5px 6px 0 6px');
+            $(".navbar-nav > li > a").addClass("a-padding-mediumFont");
+            $(".topmenu.dwnarrow").addClass("dwnarrow-medium-large-Font");
+            fontForIPhone5(localStorage.font);
+            widthForLoginForm(localStorage.font);
+        });
+        $("#small_font").click(function () {
+            localStorage.font = "small";
+            $("#layout_html,body").css("font-size", "13px");
+            $('.fbtncontainer').removeClass('select');
+            $("#small_font").addClass("select");
+            //            $(".accessyouraccount").css("padding-left", "24px");
+            //            $("#overlay").css("margin", "20px 0px 0px 695px");
+            //            $(".login_text_box").css("width", "165px");
+            //            $(".login_overlay").css("width", "243px");
+            //            $('#Banner1Text').css('margin-top', '-24px');
+            //            $('#Banner2Text,#Banner3Text').css('margin-top', '0px');
+            $('.separator').css('margin', '5px 9px 0 9px');
+            $(".navbar-nav > li > a").removeClass("a-padding-mediumFont");
+            $(".topmenu.dwnarrow").removeClass("dwnarrow-medium-large-Font");
+            fontForIPhone5(localStorage.font);
+            widthForLoginForm(localStorage.font);
+        });
+        if (localStorage.font) {
+            if (localStorage.font == "small") {
+                $('.fbtncontainer').removeClass('select');
+                $("#small_font").addClass("select");
+                FontSizeInLandscapeFromTabToLaptop(localStorage.font); //$("#layout_html,body").css("font-size", "13px");
+                //                $(".accessyouraccount").css("padding-left", "24px");
+                //$("#overlay").css("margin", "20px 0px 0px 695px");
+                //                $("#overlay").css("margin", "170px 0px 0px 900px");
+                //                $(".login_text_box").css("width", "165px");
+                //                //$(".login_overlay").css("width", "243px");
+                //                $(".login_overlay").css("width", "306px");
+                //                $('#Banner1Text').css('margin-top', '-24px');
+                //                $('#Banner2Text,#Banner3Text').css('margin-top', '0px');
+                $('.separator').css('margin', '5px 9px 0 9px');
+                $(".navbar-nav > li > a").removeClass("a-padding-mediumFont");
+                $(".topmenu.dwnarrow").removeClass("dwnarrow-medium-large-Font");
+                fontForIPhone5(localStorage.font);
+                widthForLoginForm(localStorage.font);
+            }
+            else if (localStorage.font == "medium") {
+                $('.fbtncontainer').removeClass('select');
+                $("#medium_font").addClass("select");
+                FontSizeInLandscapeFromTabToLaptop(localStorage.font); //$("#layout_html,body").css("font-size", "15px");
+                //                $(".accessyouraccount").css("padding-left", "19px");
+                //                $("#overlay").css("margin", "20px 0px 0px 672px");
+                //                $(".login_overlay").css("width", "266px");
+                //                $(".login_text_box").css("width", "175px");
+                //                $('#Banner1Text').css('margin-top', '-63px');
+                //                $('#Banner2Text,#Banner3Text').css('margin-top', '0px');
+                $('.separator').css('margin', '5px 6px 0 6px');
+                $(".navbar-nav > li > a").addClass("a-padding-mediumFont");
+                $(".topmenu.dwnarrow").addClass("dwnarrow-medium-large-Font");
+                fontForIPhone5(localStorage.font);
+                widthForLoginForm(localStorage.font);
+            }
+            else if (localStorage.font == "large") {
+                $('.fbtncontainer').removeClass('select');
+                $("#large_font").addClass("select");
+                FontSizeInLandscapeFromTabToLaptop(localStorage.font); //$("#layout_html,body").css("font-size", "17px");
+                //                $(".accessyouraccount").css("padding-left", "14px");
+                //                $("#overlay").css("margin", "20px 0px 0px 655px");
+                //                $(".login_overlay").css("width", "283px");
+                //                $(".login_text_box").css("width", "180px");
+                //                $('#Banner2Text,#Banner3Text').css('margin-top', '-40px');
+                //                $('#Banner1Text').css('margin-top', '-70px');
+                $('.separator').css('margin', '5px 0 0 0');
+                $(".navbar-nav > li > a").removeClass("a-padding-mediumFont");
+                $(".topmenu.dwnarrow").addClass("dwnarrow-medium-large-Font");
+                fontForIPhone5(localStorage.font);
+                widthForLoginForm(localStorage.font);
+            }
+        }
+        else {
+            localStorage.font = "small";
+        }
+        $("#logobtn").click(function () {
+            removesession();
+        });
+
+        $("#navbar").click(function (event) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("navbar-collapse overlayC zeroleft in");
+            //var _focusUl = $(".nav").hasClass("nav navbar-nav");
+            //var _openedUlS = $(".navbar-collapse").hasClass("nav navbar-nav");
+
+            if (_opened === true && !clickover.hasClass("navbar-toggle") && !clickover.is("#searchtextbox") && !clickover.is("#SearchButton") && !clickover.is("a.dropdown-toggle.topmenu.dwnarrow.select") && !clickover.parent().is("div.leftnav")) {
+                $("button.navbar-toggle").click();
+            }
+        });
+        prependOrAppendWelcomeAboveButton();
+        $("button.navbar-toggle").click(function (event) {
+            var parentClass = $("#myNavbar").hasClass("overlayC minusleft");
+            if (parentClass) {
+                $("#myNavbar").removeClass("minusleft");
+                $("#myNavbar").addClass("zeroleft");
+                $("#myNavbar").css("transition-timing-function", "linear");
+            }
+            else {
+                $("#myNavbar").removeClass("zeroleft");
+                $("#myNavbar").addClass("minusleft");
+                $("#myNavbar").css("transition-timing-function", "linear");
+            }
+        });
+        $("#liFirmMenu").click(function () {
+            var hasOpenClass = $("#liFirmMenu").hasClass("border_bot_white color-me open");
+            if (!hasOpenClass) {
+                $("#liFirmMenu").addClass("open");
+            }
+            else {
+                $("#liFirmMenu").removeClass("open");
+            }
+        });
+        //fontForIPhone5(localStorage.font);
+        removeDiffFontsForMobiles();
+        appendSearchBox();
+    });
+    $(window).resize(function () {
+        removeImageSeparatorInTabMobile();
+        stickyNavbarOnMobileView();
+        overlayNavbarInTabMobile();
+        fontForIPhone5(localStorage.font);
+        prependOrAppendWelcomeAboveButton();
+        removeDiffFontsForMobiles();
+        //appendSearchBox();
+        widthForLoginForm(localStorage.font);
+        FontSizeInLandscapeFromTabToLaptop(localStorage.font);
+    });
+</script>
+
+<noscript id="NoScriptMessage">Your web browser doesn't support JavaScript or JavaScript is disabled. Please enable
+        JavaScript in your browser settings so page can function correctly.</noscript>
+
+ <style type="text/css">
+        .content-background {
+            background-repeat: repeat-x, repeat;
+            /*height:600px;*/
+        }
+
+
+        .content-body {
+            background-color: aqua;
+            /*height: 600px;*/
+        }
+
+        #overlay {
+            position: absolute !important;
+            display: block !important;
+            width: 100%;
+            height: 0 !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+
+        .col {
+            display: table-cell;
+            padding: 16px;
+        }
+
+        #tollNumber:before {
+            padding-left: -5px;
+            content: '|';
+            position: absolute;
+            left: -10px;
+            z-index: 1;
+            color: #ffffff;
+        }
+
+        .navbar {
+            min-height: 41px !important;
+            margin-bottom: 0 !important;
+            border: none !important;
+        }
+
+
+        .navbar-nav > li > a {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .navbar {
+            border-radius: 0px !important;
+        }
+       
+.navbar-toggle
+{
+    padding:5px 0px;
+    border-color:transparent !important;
+    background-color:transparent !important; 
+
+}
+
+
+        /*background: url(../Images/trial.png),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB2ZXJzaW9uPSIxLjAiIHdpZHRoPSIxMDAlIiAgIGhlaWdodD0iMTAwJSIgICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICA8ZGVmcz4gICAgPGxpbmVhckdyYWRpZW50IGlkPSJteUxpbmVhckdyYWRpZW50MSIgICAgICAgICAgICAgICAgICAgIHgxPSIwJSIgeTE9IjAlIiAgICAgICAgICAgICAgICAgICAgeDI9IjAlIiB5Mj0iMTAwJSIgICAgICAgICAgICAgICAgICAgIHNwcmVhZE1ldGhvZD0icGFkIj4gICAgICA8c3RvcCBvZmZzZXQ9IjAlIiAgIHN0b3AtY29sb3I9IiM1QjdBQTAiIHN0b3Atb3BhY2l0eT0iMSIvPiAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMUYyMzUzIiBzdG9wLW9wYWNpdHk9IjEiLz4gICAgPC9saW5lYXJHcmFkaWVudD4gIDwvZGVmcz4gICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAgICAgc3R5bGU9ImZpbGw6dXJsKCNteUxpbmVhckdyYWRpZW50MSk7IiAvPjwvc3ZnPg==);*/
+    </style>
+
+
+ <div id="outerGrid">
+                    <div id="topGrid" class="row">
+                       
+                        <div class="col-md-12">
+                            <div style="position: relative; display: inline;padding-right: 10px;cursor: pointer;">
+                                <span class="topbarSeparator img">
+                                    <button id="imgCoBrowsing1" style="background-color: transparent;border: none">
+                                        <img id="cobrowsing" src="./SPS_Corporate_Website_files/Co-BrowsingIcon.png" alt="Audio Button" style="outline:none;border:0;height:18px;margin-right:-5px;margin-top:1px;width:18px;">
+                                    </button>
+                                </span>                                
+                                <span class="topbarSeparator img">
+                                    <a href="#">
+                                        <img src="./SPS_Corporate_Website_files/508compliance.png" alt="Audio Button" style="width:17px;">
+                                    </a>
+                                </span>
+
+                                <span class="topbarSeparator img">
+                                     <a href="#">
+                                        <img src="./SPS_Corporate_Website_files/help.png" alt="Help Button">
+                                    </a>
+                                </span>
+                                <span class="fbtncontainer small select" id="small_font" style="padding:3px 3px 3px 5px;">
+                                    A
+                                </span>
+                                <span class="fbtncontainer medium unselect" id="medium_font" style="padding-right:0">
+                                    A
+                                </span>
+                                <span class="fbtncontainer large unselect" id="large_font">
+                                    A
+                                </span>
+                            </div>
+                            <div id="tollNumber" style="position:relative;display:inline">
+                                Toll Free: 1-800-258-8602
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="logoGrid" class="row">
+                        
+                        <div class="col-md-5 col-xs-4 logout padding-right-0">
+                            
+                            <a href="#">
+                                <img class="margin-top-bottom-15-10 img-responsive" id="logo" src="./SPS_Corporate_Website_files/SPSlogo.png" alt="SPS Logo">
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-xs-8 profUpdate padding-left-0 margin-bottom-5" style="display: inline-block;">
+                </div>
+                       
+                    </div>
+
+                    
+                    <nav id="navbar" class="navbar navbar-inverse max-width-750" style="background-color: transparent;">
+                        <div class="container-fluid">
+                            <div class="navbar-header" id="navbarLogo">
+                                <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="font-size:0px;float:left">submit
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                
+                            </div>  
+                            <div class="padding-right-0 collapse navbar-collapse minusleft" style="display:block !important" id="myNavbar">
+                          
+                             <ul class="nav navbar-nav">
+                                    <li class="border_bot_white color-me"> <a href="#">Home</a></li>
+                                    <img class="separator" src="./SPS_Corporate_Website_files/menudivider.png" alt="menu divider">
+                                   
+                                    <li class="border_bot_white color-me" id="aboutUs"> <a href="#">About Us</a></li>
+                                    <img class="separator" src="./SPS_Corporate_Website_files/menudivider.png" alt="menu divider">
+                                    
+                                    <li class="border_bot_white color-me" id="liFirmMenu">
+                                        <a class="dropdown-toggle topmenu dwnarrow select" data-toggle="dropdown" href="#">Services </a>
+                                        <ul id="ulFirm" class="navbar-default-sub dropdown-menu">
+                                            <li id="liFocus" class="li-inner">
+                                                <a href="#" class="color-white">
+                                                    Account Information
+                                                </a>
+                                            </li>
+                                            
+                                            <li id="divFirmfirst" class="divider"></li>
+                                            <li class="li-inner">
+                                                <a href="#" class="color-white">
+                                                    Assistance Programs
+                                                </a>
+                                            </li>
+                                            
+                                           
+                                            
+                                        </ul>
+                                    </li>
+                                   
+                                    <img class="separator" src="./SPS_Corporate_Website_files/menudivider.png" alt="menu divider">
+                                    <li class="border_bot_white color-me"><a href="#">Careers</a></li>
+                                    <img class="separator" src="./SPS_Corporate_Website_files/menudivider.png" alt="menu divider">
+                                    <li class="border_bot_white color-me"><a href="#">Contact Us</a></li>
+                                    <img class="separator" src="./SPS_Corporate_Website_files/menudivider.png" alt="menu divider">
+                                    <li class="border_bot_white color-me"><a href="#">FAQ</a></li>
+                                    <img class="separator" src="./SPS_Corporate_Website_files/menudivider.png" alt="menu divider">
+                                    <li class="color-me" style="background-color: #2fa4df;"><a href="#">Make Payment</a></li> 
+                                    <img class="separator" src="./SPS_Corporate_Website_files/menudivider.png" alt="menu divider"> 
+                                  
+                                   
+                                </ul>
+                         
+                              
+                               
+                               
+                              
+                            <ul class="nav navbar-nav navbar-right margin-right-12" id="searchBox">
+                                    
+                                    <form class="form-inline margin-top-8 margin-left-15" action="#" method="post">
+                                        
+                                            
+                                              <div id="searchContainer">
+                                                    <input autocomplete="off" id="searchtextbox" name="search" placeholder="Search this Site" type="text" value="" style="vertical-align: middle;" maxlength="100">
+                                                    <label class="offscreen" for="searchtextbox">Search</label>
+                                                    
+                                                    <input type="submit" id="SearchButton" value="Search" style="vertical-align: middle; font-size:0px; ">
+                                                </div>
+                                            
+
+                                    </form>
+                                </ul></div>
+                        </div>
+                    </nav>
+
+                </div>
+
+
+
+    </header>
+    </div>
+    <div id="mainGrid" class="clearfix">
+        <div id="renderGrid2" style="position: relative;">
+        
+            
+
+<script src="./SPS_Corporate_Website_files/jquery-3.5.1.min.js.download" type="text/javascript"></script>
+<script src="./SPS_Corporate_Website_files/box-slider.jquery.js.download" type="text/javascript"></script>
+<script src="./SPS_Corporate_Website_files/box-slider-fx-scroll.js.download" type="text/javascript"></script>
+
+<script src="./SPS_Corporate_Website_files/bootstrap.js.download" type="text/javascript"></script>
+<script src="./SPS_Corporate_Website_files/UTubeHelper.js.download" type="text/javascript"></script>
+<link href="./SPS_Corporate_Website_files/Site.css" rel="stylesheet" type="text/css">
+<link href="./SPS_Corporate_Website_files/Layout.css" rel="stylesheet" type="text/css">
+<style>
+    .banner:first-child
+    {
+        background-color: rgba(212, 223, 236, 1);
+    }
+    .banner > img#Banner5
+    {
+        height: auto !important;
+        width: 300px !important;
+        padding-left: 10px;
+        padding-top: 25px;
+    }
+    
+    #banner5text
+    {
+        padding-left: 10px;
+        width: 30% !important;
+        height: auto !important;
+        color: black;
+        font-size: 1em;
+        display: block;
+        position: absolute;
+        background-color: white;
+        margin-left: 310px;
+        margin-top: -200px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+</style>
+<script type="text/javascript">
+    $('#renderGrid2').css("position", "relative")
+    $(document).ready(function () {
+
+        //marquee properties
+        //        $('.marquee').marquee({
+        //            //speed in milliseconds of the marquee
+        //            duration: 30000,
+        //            //gap in pixels between the tickers
+        //            gap: 0,
+        //            //time in milliseconds before the marquee will start animating
+        //            delayBeforeStart: 0,
+        //            //'left' or 'right'
+        //            direction: 'left',
+        //            //allow CSS3 support
+        //            allowCss3Support: 'true'
+        //        });
+        var $box = $('.banner')
+          , $indicators = $('.goto-slide')
+          , $effects = $('.effect')
+          , $timeIndicator = $('#time-indicator')
+          , slideInterval = 9000
+          , effectOptions = {
+              'blindLeft': { blindCount: 15 }
+            , 'blindDown': { blindCount: 15 }
+            , 'tile3d': { tileRows: 6, rowOffset: 80 }
+            , 'tile': { tileRows: 6, rowOffset: 80 }
+          };
+
+        // This function runs before the slide transition starts
+        var switchIndicator = function ($c, $n, currIndex, nextIndex) {
+            // kills the timeline by setting it's width to zero
+            $timeIndicator.stop().css('width', 0);
+            // Highlights the next slide pagination control
+            $indicators.removeClass('current').eq(nextIndex).addClass('current');
+            showCustomerHubBannerText(nextIndex);
+        };
+
+        // This function runs after the slide transition finishes
+        var startTimeIndicator = function () {
+            // start the timeline animation
+            $timeIndicator.animate({ width: '680px' }, slideInterval);
+        };
+
+        // initialize the plugin with the desired settings
+        $box.boxSlider({
+            speed: 2000
+          , autoScroll: true
+          , pauseOnHover: true
+          , timeout: slideInterval
+          , next: '#next'
+          , prev: '#prev'
+          , pause: '#pause'
+          , effect: 'scrollHorz'
+          , onbefore: switchIndicator
+          , onafter: startTimeIndicator
+        });
+
+        startTimeIndicator(); // start the time line for the first slide
+
+        // Paginate the slides using the indicator controls
+        $('#controls').on('click', '.goto-slide', function (ev) {
+            $box.boxSlider('showSlide', $(this).data('slideindex'));
+            ev.preventDefault();
+        });
+
+        $('ul#controls a').each(function () {
+            var aLnkObj = $(this);
+            var val = aLnkObj.data('slideindex') + 1;
+            aLnkObj.prepend("Slide " + val);
+        });
+
+        $("#divCollapseContent").on('click', function () {
+            var spanText = $("#divCollapseContent>span").html();
+            if (spanText.toLowerCase() == "show") {
+                $("#divCollapseContent>span").html("Hide");
+            }
+            else {
+                $("#divCollapseContent>span").html("Show");
+            }
+        });
+
+    });
+    function showCustomerHubBannerText(index) {
+        if (index == 5) {
+            setTimeout(function () {
+                $("#banner5text").show();
+            }, 1800);
+        }
+        else {
+            $("#banner5text").hide();
+        }
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".login_button").click(function () {
+            var csrval = $('#csrhidden').val();
+            var url = window.location.href.slice(window.location.href.indexOf('?') + 1);
+            if (csrval == null && csrval != "1") {
+                $(".err0").removeClass("err0");
+                $("#user_err,#pwd_err,#err0,#err1").hide();
+                var user = $.trim($("#HomeUsername_txt").val());
+                var pwd = $.trim($("#txtPassword").val());
+                if (!user || user == "Username") {
+                    $("#HomeUsername_txt").addClass("err0");
+                    $("#user_err").show();
+                    $("#login_err").hide();
+                    document.getElementById("btn_login").setAttribute('clicked', '0');
+                    return false;
+                }
+                else if (!pwd) {
+                    $("#txtPassword").addClass("err0");
+                    $("#pwd_err").show();
+                    $("#login_err").hide();
+                    document.getElementById("btn_login").setAttribute('clicked', '0');
+                    return false;
+                }
+            }
+            else {
+
+                $(".err0").removeClass("err0");
+                $("#loanNo_err,#ssn_err,#err0,#err1").hide();
+                var user = $.trim($("#HomeLoanNumber_txt").val());
+                var pwd = $.trim($("#txtSSN").val());
+                if (!user || user == "loanNumber") {
+                    $("#HomeLoanNumber_txt").addClass("err0");
+                    $("#loanNo_err").show();
+                    $("#login_err").hide();
+                    document.getElementById("btn_login").setAttribute('clicked', '0');
+                    return false;
+                }
+                else if (!pwd) {
+                    $("#txtSSN").addClass("err0");
+                    $("#ssn_err").show();
+                    $("#login_err").hide();
+                    document.getElementById("btn_login").setAttribute('clicked', '0');
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        setCollapse();
+        removeBannerInMobile();
+        $('#HomeUsername_txt,#txtPassword').focus(function () {
+            $('.banner').boxSlider('playPause');
+        });
+        $('#HomeUsername_txt,#txtPassword').blur(function () {
+            $('.banner').boxSlider('playPause');
+        });
+        $('#txtPassword').val('');
+    });
+
+    function setCollapse() {
+        var isMobile = window.matchMedia("only screen and (max-width: 480px)");
+        var isMediumMobile = window.matchMedia("only screen and (max-width: 760px)");
+        var isTabMobile = window.matchMedia("only screen and (max-width: 1023px)");
+
+        if (isMobile.matches || isMediumMobile.matches || isTabMobile.matches) {
+            $('#hheadingCol,#hheadingCol1,#hheadingCol2,#hheadingCol3,#myModalLabel').addClass("collapsed")
+            $('#demo,#demo1,#demo2,#demo3,#demo4').addClass("collapse")
+            $('#demo,#demo1,#demo2,#demo3,#demo4').removeClass("in")
+        }
+        else {
+            $('#hheadingCol,#hheadingCol1,#hheadingCol2,#hheadingCol3,#myModalLabel').removeClass("collapsed")
+            $('#demo,#demo1,#demo2,#demo3,#demo4').removeClass("collapse")
+            $('#demo,#demo1,#demo2,#demo3,#demo4').addClass("in")
+        }
+    }
+
+    function removeBannerInMobile() {
+        var isMobile = window.matchMedia("only screen and (max-width: 480px)");
+        var isMediumMobile = window.matchMedia("only screen and (max-width: 760px)");
+        var isTabMobile = window.matchMedia("only screen and (max-width: 1023px)");
+
+        if (isMobile.matches || isMediumMobile.matches || isTabMobile.matches) {
+            $('#overlayM').removeAttr("style")
+            $('#overlayM > .login_overlay').removeClass("login_overlay")
+            $('#overlayM > div').addClass('login_overlayM');
+            $("#Banners").hide();
+            $('#newsColumn').css({ 'margin-top': '10px' })
+        }
+        else {
+            $('#overlayM').css({ 'position': 'absolute', 'z-index': '1000', 'top': '55px', 'right': '35px' })//'min-width': '285px', 'max-width': '341px'
+            $('#overlayM > .login_overlayM').removeClass("login_overlayM")
+            $('#overlayM > div').addClass('login_overlay');
+            $("#Banners").show();
+            $("#Banners").css({ 'display': '' })
+            $('#newsColumn').css({ 'margin-top': '' })
+        }
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var height1 = $('#box1').height();
+        var height2 = $('#box2').height();
+        height1 = (height1 - 64) / 2;
+        height2 = (height2 - 64) / 2;
+        //        $('#img1').css('margin-top', height1);
+        //        $('#img2').css('margin-top', height2);
+        //$('#marquee_wrapper .js-marquee-wrapper').css('animation-duration', '189.652s');
+    });
+
+    $(window).resize(function () {
+        setCollapse();
+        removeBannerInMobile();
+        //        $('#marquee_wrapper .js-marquee-wrapper').css('animation-duration', '189.652s');
+    });    
+</script>
+
+<script type="text/javascript">
+    // Change the type of input to password or text
+    function ShowPassword(target) {
+        var d = document;
+        var pswd = d.getElementById(target);
+        var flag = d.getElementById("showhide");
+        if (flag.innerHTML == 'Show') {
+            pswd.setAttribute('type', 'text');
+            flag.innerHTML = 'Hide';
+        }
+        else {
+            pswd.setAttribute('type', 'password');
+            flag.innerHTML = 'Show';
+        }
+
+    }
+</script>
+
+<noscript class="offscreen">
+    Your web browser doesn't support JavaScript or JavaScript is disabled. Please enable
+    JavaScript in your browser settings so page can function correctly.
+</noscript>
+
+
+<form action="https://www.spservicing.com/" autocomplete="off" id="loginForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="RTwQUGDqfxmmoq38ylqsEdf2u4O1xr0cemiTBNcSqIW_pCJG0MUHIldAWCl0NnRDfaK3CWYNtA996AQGu_epKkCq_wSZYGcjBhOmgvuGXkemVMAZ39wb08JOSlAn0V-x0GA4NGC314zefrI2jyz-cXQ42OtprfKfrKI-bd7G_ew1">    <div class="clearfix">
+        
+    </div>
+    <div id="overlayM" style="top: 55px; right: 35px; position: absolute; z-index: 1000;">
+        <div class="login_overlay" style="line-height: normal;">
+            <div class="accessyouraccount">
+                Access your Account</div>
+            <div class="row">
+                <div class="col-xs-4" style="padding-right: 0px;"><label class="login_label" for="HomeUsername_txt">User Name</label></div>
+                <div class="col-xs-8" style="padding-left: 0px;"><input maxlength="25" autocomplete="off" class="login_text_box" id="HomeUsername_txt" name="userName" type="text" value=""></div>
+                
+            </div>
+            <div class="row">
+                <div class="col-xs-4" style="padding-right: 0px;"><label class="login_label" for="txtPassword" style=" padding-right: 10px">Password</label></div>
+                <div class="col-xs-8" style="padding-left: 0px;">
+                    <input maxlength="25" autocomplete="off" class="login_text_box" id="txtPassword" name="password" type="password" value=""></div>
+                 
+                <label class="login_label" for="Show" id="showhide" onclick="ShowPassword(&#39;txtPassword&#39;);" style="text-align:right;width:95%">Show</label>
+                
+            </div>
+            <div>
+                
+            </div>
+            <div class="login_link" style="margin-left: 0px; margin-top: -6px; padding-bottom: 10px">
+                <input checked="checked" id="usertyperCustomer" name="userTypeId" type="radio" value="1">
+                <label for="usertyperCustomer">Customer</label>
+                <input id="usertypertp" name="userTypeId" type="radio" value="2">
+                <label for="usertypertp">Third Party</label>
+            </div>
+            <div style="margin-top: 1px;">
+                <a class="login_link" href="#">Forgot User Name / Password?</a></div>
+            <ul class="list">
+                <li style="color: #FF7071; display: none;" id="user_err">Please enter the Username</li>
+                <li style="color: #FF7071; display: none;" id="pwd_err">Please enter Password</li>
+                <li style="color: #FF7071; display: none;" id="loanNo_err">Please enter the Loan Number</li>
+                <li style="color: #FF7071; display: none;" id="ssn_err">Please enter SSN</li>
+                
+                            </ul>
+            <div style="margin-top: 15px; margin-bottom: 7px;">
+                
+                <div style="display: inline; margin-top: 15px; margin-bottom: 7px;">
+                    <a class="signup_button" href="#" style="text-decoration:none;">NEW USER SIGN-UP</a>
+                </div>
+                <div style="display: inline; margin-top: 15px; margin-bottom: 7px;">
+                    <input type="submit" class="login_button" id="btn_login" value="LOGIN" onclick="if (this.getAttribute(&#39;clicked&#39;) == &#39;1&#39;)
+                    { return false; } else { this.setAttribute(&#39;clicked&#39;, &#39;1&#39;); }">
+                    
+                </div>         
+
+            </div>
+            <div style="margin-top: 15px; margin-bottom: 7px; margin-left: 55px;">
+            
+                <div style="display: inline;  ">                         
+                  
+                   
+                    <a class="quickpay_button" href="#" style="text-decoration:none;color:white">Make Payment</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</form><div style="background-color: white; padding-left: 10px; padding-right: 10px; padding-top: 1px">
+    <div class="row" id="divCovid" style="padding-top: 5px">
+        <div class="col-md-12">
+            <div class="clearfix">
+                <div style="font-size:1.4em;font-weight:bold;color: darkblue;">
+                   Have you been affected by COVID-19? Visit our 
+                    <a style="text-decoration: underline; color: #2fa4df" href="#">COVID-19 Assistance</a>
+                    page for information and help.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Banners" class="row" style="padding-top: 5px">
+        <div class="col-md-12">
+            <div class="clearfix">
+                
+                <div class="banner" style="height: 330px; position: relative; overflow: hidden;">
+
+                    <img id="Banner1" src="./SPS_Corporate_Website_files/banner1.png" alt="banner1" style="height: 330px; width: 1120px; position: absolute; top: 0px; left: 0px; display: block;">
+                    <img id="Banner2" src="./SPS_Corporate_Website_files/banner2.png" alt="banner2" style="height: 330px; width: 1120px; position: absolute; top: 0px; left: -1120px; display: block;">
+                    <img id="Banner3" src="./SPS_Corporate_Website_files/banner3.png" alt="banner3" style="height: 330px; width: 1120px; position: absolute; top: 0px; left: -1120px; display: block;">
+                    <img id="Banner4" src="./SPS_Corporate_Website_files/banner4.png" alt="banner4" style="height: 330px; width: 1120px; position: absolute; top: 0px; left: -1120px; display: block;">
+                    <img id="Banner5" src="./SPS_Corporate_Website_files/CustomerInfoHub.png" alt="banner5" style="height: 330px; width: 1120px; position: absolute; top: 0px; left: -1120px; display: block;">
+
+                </div>
+                <div class="banner button" id="bbtncontainer" style="height: 24px; overflow: hidden;">
+                    <div style="position: absolute; top: 0px; left: 0px; width: 1120px; height: 24px; display: block;"><a class="btn know" href="#">Learn More</a></div>
+                    
+                    <div style="position: absolute; top: 0px; left: -1120px; width: 1120px; height: 24px; display: block;"><a class="btn know" href="#">Learn More</a></div>
+                    <div style="position: absolute; top: 0px; left: -1120px; width: 1120px; height: 24px; display: block;"><a class="btn know" href="#">Learn More</a></div>
+                    <div style="position: absolute; top: 0px; left: -1120px; width: 1120px; height: 24px; display: block;"><a class="btn know" href="#">Learn More</a></div>
+                    <div style="position: absolute; top: 0px; left: -1120px; width: 1120px; height: 24px; display: block;">
+                    </div>
+                </div>
+                <div id="banner5text" style="display: none">
+                    The <b><font color="#2fa4df">Customer Information HUB </font></b>is a new tool available
+                    on your account homepage. This exciting and interactive tool will allow you to receive
+                    account specific information in real time. To use this new tool, simply log into
+                    your account and select a section of the HUB for a list of questions related to
+                    that topic. Click on a question to receive an answer which is specific to your account
+                    information
+                </div>
+                <nav class="slider-controls">
+        
+        <ul id="controls">
+            <li><a id="Control1" class="goto-slide current" href="#" data-slideindex="0" title="Controltitle1" style="font-size: 0px;">Slide 1</a>
+
+            </li>
+            <li><a id="Control2" class="goto-slide" href="#" data-slideindex="1" title="Controltitle2" style="font-size: 0px;">Slide 2</a></li>
+            <li><a id="Control3" class="goto-slide" href="#" data-slideindex="2" title="Controltitle3" style="font-size: 0px;">Slide 3</a></li>
+            <li><a id="Control4" class="goto-slide" href="#" data-slideindex="3" title="Controltitle4" style="font-size: 0px;">Slide 4</a></li>
+            <li><a id="Control5" class="goto-slide" href="#" data-slideindex="4" title="Controltitle5" style="font-size: 0px;">Slide 5</a></li>
+
+        </ul>
+    </nav>
+            </div>
+        </div>
+    </div>
+     
+        <div class="row">
+            <div id="newsColumn" class="col-md-12">
+                 
+                <div class="marquee">
+                        <div class=" para">
+                             <b>If you have been affected by a natural disaster, we are here to help.  We recommend that you first file a claim with your insurance company, then call us at 888.818.6032 so we can assist you.</b>
+                        </div>
+                </div>
+                
+                  
+            </div>
+        </div>
+    <div class="row" id="divCorona" style="margin-top:10px;display:none;">
+        <div class="col-md-12">
+        <div class="hheading" data-toggle="collapse" data-target="#divCoronaContent" id="divCollapseContent">
+            Are you affected by COVID-19? <!-- <span style="cursor:pointer;font-weight:bold;font-size:10px;text-decoration:underline;transform:rotate(0deg);display:inline-block;width:20px;height:20px;margin-left:10px;vertical-align:middle">Hide</span> -->
+        </div>
+        <div id="divCoronaContent" class="collapse in" style="padding-left:10px;padding-top:10px;">
+            As the situation and impact of COVID-19 develops across the country, Select Portfolio Servicing is here to support you and we are taking steps to ensure there is no interruption in the servicing of your mortgage. 
+            <a class="btn know" href="#" style="border:1px solid lightgray" "="">Learn More</a>
+        </div>
+        </div>
+    </div>
+    <div id="hcontent" class="row">
+        <div class="col-md-4">
+            <div class="hcontainer">
+                <div id="hheadingCol" class="hheading" data-toggle="collapse" data-target="#demo">
+                    New to SPS?
+                </div>
+                <div id="demo" class="in">
+                    <div class="hbox" style="overflow: auto">
+                        <img style="float: left; padding: 0px 7px 7px 0px;" src="./SPS_Corporate_Website_files/HomeLoanTransfer.jpg" alt="Servicing Transfer etc…">
+                        Was your loan recently transferred to SPS? Find out about the services and solutions
+                        we offer. We recognize that having your mortgage account transferred may be confusing.
+                        We're here to make this process as seamless as possible for you. Read over these
+                        <a href="#" style="text-decoration: none; color: #2fa4df">
+                            Frequently Asked Questions</a> to learn more about the transfer process.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="hcontainer">
+                <div id="hheadingCol1" class="hheading" data-toggle="collapse" data-target="#demo1">
+                    New Features
+                </div>
+                <div id="demo1" class="in">
+                    <div class="hbox" style="overflow: auto">
+                        <!--
+                        <img style="float: left; padding: 0px 7px 7px 0px;"  src="/Images/Hub.png"
+                            alt="Hub" />
+					-->
+                        At SPS, we continue to make improvements to ensure our customer tools are as easy
+                        to use as possible.
+                        <br>
+                        <br>
+                        Access your account to view the new <b>Customer Dashboard </b>which provides you
+                        with a quick, easy to use account summary. In addition, if you have multiple SPS
+                        accounts, switching between your accounts is easier than ever.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            
+            <div class="hcontainer">
+                <div class="hheading" id="myModalLabel" data-toggle="collapse" data-target="#demo4">
+                    How to Videos</div>
+                <div id="demo4" class="in">
+                    <div class="hbox video">
+                        <a onclick="changeVideo(&#39;ctlVideoWelcomeSPS&#39;)" style="cursor: pointer;">
+                            <img src="./SPS_Corporate_Website_files/Video.png" alt="Video" title="Video" align="middle">&nbsp;Welcome
+                            to SPS</a>
+                    </div>
+                    <div class="hbox video">
+                        <a onclick="changeVideo(&#39;ctlVideoAch&#39;)" style="cursor: pointer;">
+                            <img src="./SPS_Corporate_Website_files/Video.png" alt="Video" title="Video" align="middle">&nbsp;Setup
+                            an Automatic Payment</a>
+                    </div>
+                    <div class="hbox video">
+                        <a onclick="changeVideo(&#39;ctlVideoOnline&#39;)" style="cursor: pointer;">
+                            <img src="./SPS_Corporate_Website_files/Video.png" alt="Video" title="Video" align="middle">&nbsp;Manage
+                            Your Account Online</a>
+                    </div>
+                    <div class="hbox video">
+                        <a onclick="changeVideo(&#39;ctlVideobilling&#39;)" style="cursor: pointer;">
+                            <img src="./SPS_Corporate_Website_files/Video.png" alt="Video" title="Video" align="middle">&nbsp;Read
+                            Your Billing Statement</a></div>
+                    <div class="hbox video">
+                        <a onclick="changeVideo(&#39;ctlVideoEscrow&#39;)" style="cursor: pointer;">
+                            <img src="./SPS_Corporate_Website_files/Video.png" alt="Video" title="Video" align="middle">&nbsp;Read
+                            Your Escrow Analysis Statement</a></div>
+                    <div class="hbox video">
+                        <a onclick="changeVideo(&#39;ctlVideoyearend&#39;)" style="cursor: pointer;">
+                            <img src="./SPS_Corporate_Website_files/Video.png" alt="Video" title="Video" align="middle">&nbsp;Read
+                            1098 Year End Statement</a></div>
+                    <div class="hbox video">
+                        <a onclick="changeVideo(&#39;ctlVideoThirdParty&#39;)" style="cursor: pointer;">
+                            <img src="./SPS_Corporate_Website_files/Video.png" alt="Video" title="Video" align="middle">&nbsp;Setup
+                            Third Party Access</a>
+                    </div>
+                </div>
+            </div>
+              
+        </div>
+    </div>
+    
+</div>
+<!--Sameer 06222018, Added Video Section to provide video link on home page, #283033-->
+<div class="modal fade" id="uTubeModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" style="height: 400px">
+                <video width="100%" height="100%" controls="" id="ctlVideoWelcomeSPS" oncontextmenu="return false;" controlslist="nodownload" data-description="Welcome To SPS Video">
+                        <source src="/Content/Videos/WelcomeToSPS.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <video width="100%" height="100%" controls="" id="ctlVideoAch" oncontextmenu="return false;" controlslist="nodownload" data-description="Setup ACH Video">
+                        <source src="/Content/Videos/ACH_Set-up_DemoVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <video width="100%" height="100%" controls="" id="ctlVideobilling" oncontextmenu="return false;" controlslist="nodownload" data-description="Billing Statement Video">
+                        <source src="/Content/Videos/BillingStatement_DemoVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <video width="100%" height="100%" controls="" id="ctlVideoEscrow" oncontextmenu="return false;" controlslist="nodownload" data-description="Escrow Analysis Video">
+                        <source src="/Content/Videos/EscrowAnalysisDemoVideo_New.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <video width="100%" height="100%" controls="" id="ctlVideoyearend" oncontextmenu="return false;" controlslist="nodownload" data-description="1098 Statement Video">
+                        <source src="/Content/Videos/1098Statement_PublishedDemoVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <video width="100%" height="100%" controls="" id="ctlVideoThirdParty" oncontextmenu="return false;" controlslist="nodownload" data-description="Third Party Access Video">
+                        <source src="/Content/Videos/Third Party Access_DemoVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <video width="100%" height="100%" controls="" id="ctlVideoOnline" oncontextmenu="return false;" controlslist="nodownload" data-description="Website Tutorial Video">
+                        <source src="/Content/Videos/WebsiteTutorialDemoVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <video width="100%" height="100%" controls="" id="ctlVideoCustHub" oncontextmenu="return false;" controlslist="nodownload" data-description="Setup CustHub Video">
+                        <source src="/Content/Videos/CustHub_Set-up_DemoVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            </div>
+            <div class="modal-footer">
+                <img id="videologo" src="./SPS_Corporate_Website_files/favicon1.ico" alt="SPS Logo" style="width: 2.8rem; height: 1.25rem; float: left;">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <button onclick="topFunction()" id="moveTop" title="Go to top" style="display: none;"><span>⇧</span></button>
+        </div>
+    </div>
+    <footer>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#resource_center").hover(function () {
+            $(this).next().show();
+            var width = $(".r_line").width();
+            $(this).css("width", width);
+        }, function () {
+            $(this).next().hide();
+            if ($("#resource_menu").is(":visible")) { }
+            else {
+                $(this).css("width", "auto");
+            }
+        });
+        $("#resource_menu").hover(function () {
+            $(this).show();
+            var width = $(".r_line").width() - 19;
+            $("#resource_center").css("width", width);
+        }, function () {
+            $(this).hide();
+            $("#resource_center").css("width", "auto");
+        });
+    });
+</script>
+<noscript class="offscreen">
+    Your web browser doesn't support JavaScript or JavaScript is disabled. Please enable
+    JavaScript in your browser settings so page can function correctly.
+</noscript>
+<div id="footerGrid" style="padding-left: 15px; padding-right: 15px">
+    <div class="row" style="line-height: 48px; height: 48px">
+        <div class="col-md-3 col-sm-6 col-xs-5" style="color: #353B7D; padding-left: 25px;">
+            OUR POLICIES
+        </div>
+        <div class="col-md-9 col-sm-6 col-xs-7" style="color: #353B7D; padding-left: 24px;">
+            ABOUT SPS
+        </div>
+        <div id="footerLine">
+        </div>
+    </div>
+    <div id="footer2">
+        <div class="row" style="padding-top:10px; padding-bottom:10px;">
+            <div class="col-md-3 col-sm-6 col-xs-5" style="padding: 0 25px;">
+                <ul>
+                    <li style="color: #7A9BC3"><a href="#" style="color: #7A9BC3">Privacy Practices and Policy</a><a></a></li><a>
+                    </a><li style="color: #7A9BC3"><a></a><a href="#" style="color: #7A9BC3">Terms of Use
+                    </a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-7" style="padding: 0 12px;">
+            <div class="col-md-4" style="padding: 0 12px;">
+                <ul>
+                    <li style="color: #7A9BC3"><a href="#" style="color: #7A9BC3">Careers
+                    </a></li>
+                    <li style="color: #7A9BC3"><a href="#" style="color: #7A9BC3">Contact Us
+                    </a></li>
+                    <li style="color: #7A9BC3"><a href="#" style="color: #7A9BC3">We Care
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-md-4" style="padding: 0 12px;">
+                <ul>
+                    <li style="color: #7A9BC3"><a href="#" style="color: #7A9BC3">Newsroom
+                    </a></li>
+                    <li style="color: #7A9BC3"><a href="#" style="color: #7A9BC3">Resource Center
+                    </a></li>
+                     <li style="color: #7A9BC3"><a href="#" target="_blank" style="color: #7A9BC3">SPS REO Properties
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-md-4" style="padding: 0 12px;">
+                <ul>
+                    
+                    <li style="color: #7A9BC3"><a href="#" download="" target="_blank" id="Licensing" style="color: #7A9BC3">Licensing (NMLS ID:  3114)</a></li>
+                    <li style="color: #7A9BC3"><a href="#" target="_blank" id="NMLS">NMLS</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer2Grid">
+    <div class="row" style="padding-left:25px;padding-right:25px;padding-top:10px">
+        <div class="col-md-6">
+        
+            <div style="color: #3D4E79;">
+                <a href="#" id="f2_link1" style="color: #5E6296;">Site Map</a></div>
+            <div style="color: #3D4E79; font-size: 0.808em">
+                SPS may provide links to external websites to which we have no control over the
+                content or accuracy. These websites are provided solely for your convenience. Please
+                contact the administrators of such websites with any questions or concerns regarding
+                those websites.
+            </div>
+        </div>
+        <div class="col-md-6 text-right">           
+            <div style="color: #3D4E79;">
+                © Copyright 2014 Select Portfolio Servicing, Inc. All rights reserved</div>
+            <div style="color: #3D4E79; font-size: 0.808em;">
+                Reproduction in whole or in part without permission is prohibited
+            </div>
+          
+            <div style="color: #3D4E79; font-size: 0.808em;">
+                This site is best viewed in IE11 and above browsers
+            </div>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .content-background
+    {
+        background-repeat: repeat-x, repeat; /*height:600px;*/
+    }
+    
+    
+    .content-body
+    {
+        background-color: aqua; /*height: 600px;*/
+    }
+    
+    #overlay
+    {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    #text
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+    }
+    
+    .col
+    {
+        display: table-cell;
+        padding: 16px;
+    }
+    
+    #tollNumber:before
+    {
+        padding-left: -5px;
+        content: '|';
+        position: absolute;
+        left: -10px;
+        z-index: 1;
+        color: #ffffff;
+    }
+    
+    .navbar
+    {
+        min-height: 41px !important;
+        margin-bottom: 0 !important;
+        border: none !important;
+    }
+    
+    
+    .navbar-nav > li > a
+    {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    
+    .navbar
+    {
+        border-radius: 0px !important;
+    }
+    /*background: url(../Images/trial.png),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB2ZXJzaW9uPSIxLjAiIHdpZHRoPSIxMDAlIiAgIGhlaWdodD0iMTAwJSIgICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICA8ZGVmcz4gICAgPGxpbmVhckdyYWRpZW50IGlkPSJteUxpbmVhckdyYWRpZW50MSIgICAgICAgICAgICAgICAgICAgIHgxPSIwJSIgeTE9IjAlIiAgICAgICAgICAgICAgICAgICAgeDI9IjAlIiB5Mj0iMTAwJSIgICAgICAgICAgICAgICAgICAgIHNwcmVhZE1ldGhvZD0icGFkIj4gICAgICA8c3RvcCBvZmZzZXQ9IjAlIiAgIHN0b3AtY29sb3I9IiM1QjdBQTAiIHN0b3Atb3BhY2l0eT0iMSIvPiAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMUYyMzUzIiBzdG9wLW9wYWNpdHk9IjEiLz4gICAgPC9saW5lYXJHcmFkaWVudD4gIDwvZGVmcz4gICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAgICAgc3R5bGU9ImZpbGw6dXJsKCNteUxpbmVhckdyYWRpZW50MSk7IiAvPjwvc3ZnPg==);*/
+</style>
+
+    </footer>
+
+     <style type="text/css">
+        .content-background {
+            background-repeat: repeat-x, repeat;
+            /*height:600px;*/
+        }
+
+
+        .content-body {
+            background-color: aqua;
+            /*height: 600px;*/
+        }
+
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        }
+
+        .col {
+            display: table-cell;
+            padding: 16px;
+        }
+
+        #tollNumber:before {
+            padding-left: -5px;
+            content: '|';
+            position: absolute;
+            left: -10px;
+            z-index: 1;
+            color: #ffffff;
+        }
+
+        .navbar {
+            min-height: 41px !important;
+            margin-bottom: 0 !important;
+            border: none !important;
+        }
+
+
+        .navbar-nav > li > a {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .navbar {
+            border-radius: 0px !important;
+        }
+        /*background: url(../Images/trial.png),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB2ZXJzaW9uPSIxLjAiIHdpZHRoPSIxMDAlIiAgIGhlaWdodD0iMTAwJSIgICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICA8ZGVmcz4gICAgPGxpbmVhckdyYWRpZW50IGlkPSJteUxpbmVhckdyYWRpZW50MSIgICAgICAgICAgICAgICAgICAgIHgxPSIwJSIgeTE9IjAlIiAgICAgICAgICAgICAgICAgICAgeDI9IjAlIiB5Mj0iMTAwJSIgICAgICAgICAgICAgICAgICAgIHNwcmVhZE1ldGhvZD0icGFkIj4gICAgICA8c3RvcCBvZmZzZXQ9IjAlIiAgIHN0b3AtY29sb3I9IiM1QjdBQTAiIHN0b3Atb3BhY2l0eT0iMSIvPiAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMUYyMzUzIiBzdG9wLW9wYWNpdHk9IjEiLz4gICAgPC9saW5lYXJHcmFkaWVudD4gIDwvZGVmcz4gICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAgICAgc3R5bGU9ImZpbGw6dXJsKCNteUxpbmVhckdyYWRpZW50MSk7IiAvPjwvc3ZnPg==);*/
+    </style>
+  </div>
+ </div>
+
+<script src="./SPS_Corporate_Website_files/box-slider.jquery.js.download" type="text/javascript"></script>
+<script src="./SPS_Corporate_Website_files/box-slider-fx-scroll.js.download" type="text/javascript"></script>
+<script src="./SPS_Corporate_Website_files/bootstrap.js.download" type="text/javascript"></script>
+
+<iframe id="LL_DataServer" name="LL_DataServer" src="./SPS_Corporate_Website_files/ll_storage_html5.html" width="1px" height="1px" frameborder="0" title="hidden CVW frame" scrolling="no" allowtransparency="true" aria-hidden="true" style="display: block; border: 0 none; width: 1px; height: 1px; position:absolute; top:100%; margin-top:-1px; left:100%; margin-left:-1px;"></iframe></body></html>

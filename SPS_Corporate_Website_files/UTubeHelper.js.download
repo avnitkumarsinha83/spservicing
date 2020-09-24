@@ -1,0 +1,31 @@
+﻿
+$(document).ready(function () {
+    $("#uTubeModel").on("hidden.bs.modal", function () {
+        $("video").each(function () { this.pause() });
+    })
+})
+
+function changeVideo(vId) {
+    $("video").hide();
+    var ctlVideo = $("#" + vId);
+
+    ctlVideo.show();
+    $("#uTubeModel").modal("show");
+
+    TrackOCTForVideos(ctlVideo.attr('data-description'));
+
+    return false;
+}
+//Sameer, 08102018 - #286955 - OCT for help videos
+function TrackOCTForVideos(vidDesc)
+{
+    $.ajax({
+        type: "Post",
+        //url: '@Url.Action("OCTForVideos", "Home")',
+        url: '/Home/OCTForVideos',// + vId,
+        contentType: "application/json; charset=utf-8",
+        //dataType: "json",
+        data: '{"videoDesc":"' + vidDesc + '"}',
+        traditional: true
+    });
+}
